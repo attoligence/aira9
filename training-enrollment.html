@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Enrollment Form | Attoligence</title>
+  <meta name="description" content="Enroll in Attoligence leading course programs, including Q Code Healthcare Solutions training with flexible payment options." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SEO:CORE START -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <link rel="canonical" href="https://www.attoligence.com/training-enrollment.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Attoligence" />
+  <meta property="og:title" content="Course Enrollment Form | Attoligence" />
+  <meta property="og:description" content="Enroll in Attoligence leading course programs, including Q Code Healthcare Solutions training with flexible payment options." />
+  <meta property="og:url" content="https://www.attoligence.com/training-enrollment.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Course Enrollment Form | Attoligence" />
+  <meta name="twitter:description" content="Enroll in Attoligence leading course programs, including Q Code Healthcare Solutions training with flexible payment options." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <!-- SEO:CORE END -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Attoligence</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">Menu</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="training.html" class="active">Learning &amp; Development</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80');"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Course Enrollment Form</h1>
+        <p>Complete the required details to enroll in the current Attoligence leading course.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-wrap panel reveal">
+        <form
+          data-google-sheet="true"
+          data-form-name="Training Enrollment"
+          data-endpoint="https://script.google.com/macros/s/AKfycbwyx8gxPYXf3_78k9r1MV27PeAFUALZ9VD3AAo0wpm6dH6XyhANvrQfYr4UMYTukZ9Kjg/exec"
+          data-coupon-system="true"
+          data-base-price="25000"
+        >
+          <section class="coupon-checkout">
+            <div class="coupon-promo coupon-promo-large" data-copy-code="ATTO10">
+              <div>
+                <span class="coupon-promo-label">Get 10% OFF</span>
+                <strong>Code: ATTO10</strong>
+                <p>Copy the code and apply it below during enrollment.</p>
+              </div>
+              <button class="btn btn-primary coupon-copy-btn" type="button">Copy Code</button>
+            </div>
+
+            <div class="price-summary" aria-live="polite">
+              <div class="price-summary-head">
+                <div>
+                  <h2>Enrollment Summary</h2>
+                  <p>Discount is calculated on the standard course fee.</p>
+                </div>
+                <span class="price-badge">Limited Offer</span>
+              </div>
+
+              <div class="price-row">
+                <span>Original Price</span>
+                <strong data-price-original>Rs. 25,000</strong>
+              </div>
+              <div class="price-row discount-row">
+                <span>Discount</span>
+                <strong data-price-discount>Rs. 0</strong>
+              </div>
+              <div class="price-row total-row">
+                <span>Final Price</span>
+                <strong data-price-final>Rs. 25,000</strong>
+              </div>
+
+              <div class="coupon-apply-wrap">
+                <label class="coupon-field">
+                  Enter Coupon Code
+                  <div class="coupon-input-row">
+                    <input type="text" name="couponCode" placeholder="Enter Coupon Code" autocomplete="off" data-coupon-input />
+                    <button class="btn btn-secondary coupon-apply-btn" type="button" data-coupon-apply>Apply</button>
+                  </div>
+                </label>
+                <p class="coupon-feedback" data-coupon-feedback></p>
+                <div class="coupon-applied" data-coupon-applied hidden>
+                  <span>Applied Coupon: <strong data-coupon-applied-code>ATTO10</strong></span>
+                  <button type="button" class="btn btn-ghost coupon-remove-btn" data-coupon-remove>Remove Coupon</button>
+                </div>
+              </div>
+
+              <input type="hidden" name="originalPrice" value="25000" data-price-original-input />
+              <input type="hidden" name="discountPercent" value="0" data-discount-percent-input />
+              <input type="hidden" name="discountAmount" value="0" data-discount-amount-input />
+              <input type="hidden" name="finalPrice" value="25000" data-final-price-input />
+              <input type="hidden" name="appliedCoupon" value="" data-applied-coupon-input />
+            </div>
+          </section>
+
+          <h2>Student Information</h2>
+          <div class="form-grid-2">
+            <label>Full Name<input type="text" name="fullName" required /></label>
+            <label>Email Address<input type="email" name="email" required /></label>
+            <label>Phone Number<input type="tel" name="phone" required /></label>
+            <label>Current Location<input type="text" name="location" required /></label>
+            <label>Highest Qualification<input type="text" name="qualification" required /></label>
+            <label>Current Status<select name="currentStatus" required><option value="" selected disabled>Select</option><option>Student</option><option>Fresher</option><option>Working Professional</option><option>Career Break</option></select></label>
+          </div>
+
+          <h2>Course Selection</h2>
+          <div class="form-grid-2">
+            <label>Selected Course<select name="selectedCourse" required><option value="" selected disabled>Select course</option><option>Q Code Healthcare Solutions - CPC Advanced Intensive Training</option></select></label>
+            <label>Mode Preference<select name="modePreference" required><option value="" selected disabled>Select</option><option>Online</option><option>Offline</option><option>Either</option></select></label>
+            <label>Preferred Time Slot<select name="preferredTimeSlot" required><option value="" selected disabled>Select slot</option><option>Online - 6:30 PM to 8:30 PM</option><option>Offline - 9:00 AM to 11:00 AM</option><option>Offline - 11:00 AM to 1:00 PM</option></select></label>
+            <label>Payment Plan<select name="paymentPlan" required><option value="" selected disabled>Select payment plan</option><option>Standard Fee - Rs. 25,000</option><option>One-Time Payment - Rs. 23,000</option><option>Installments - Rs. 15,000 and Rs. 10,000</option></select></label>
+            <label>Career Goal<input type="text" name="careerGoal" placeholder="Example: CPC certification and healthcare billing role" required /></label>
+            <label>Preferred Batch Start<input type="text" name="preferredBatch" placeholder="Example: Next Monday / April Batch" /></label>
+          </div>
+
+          <label>Why do you want to join this course?<textarea rows="4" name="joiningReason" required></textarea></label>
+          <button class="btn btn-primary" type="submit" data-default-text="Enroll Now">Enroll Now</button>
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="data-protection-policy.html">Data Protection Policy</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academy / College Partnership Request | Attoligence</title>
+  <meta name="description" content="Academy and college partnership form for placements, training, and career collaboration with Attoligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SEO:CORE START -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <link rel="canonical" href="https://www.attoligence.com/academy-partnership-form.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Attoligence" />
+  <meta property="og:title" content="Academy / College Partnership Request | Attoligence" />
+  <meta property="og:description" content="Academy and college partnership form for placements, training, and career collaboration with Attoligence." />
+  <meta property="og:url" content="https://www.attoligence.com/academy-partnership-form.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Academy / College Partnership Request | Attoligence" />
+  <meta name="twitter:description" content="Academy and college partnership form for placements, training, and career collaboration with Attoligence." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <!-- SEO:CORE END -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Attoligence</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">Menu</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="training.html" class="active">Learning &amp; Development</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=2000&q=80');"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Academy / College Partnership Request</h1>
+        <p>Institutes can collaborate with Attoligence for campus placements, training programs, and career development sessions.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-wrap panel reveal">
+        <form data-google-sheet="true" data-form-name="Academy College Partnership Request" data-endpoint="https://script.google.com/macros/s/AKfycbwyx8gxPYXf3_78k9r1MV27PeAFUALZ9VD3AAo0wpm6dH6XyhANvrQfYr4UMYTukZ9Kjg/exec">
+          <h2>Section 1 - Institution Information</h2>
+          <div class="form-grid-2">
+            <label>Institution Name<input type="text" name="institutionName" required /></label>
+            <label>Institution Type
+              <select name="institutionType" required>
+                <option value="" selected disabled>Select type</option>
+                <option>College</option>
+                <option>University</option>
+                <option>Training Institute</option>
+                <option>Academy</option>
+              </select>
+            </label>
+            <label>Website<input type="url" name="website" placeholder="https://example.com" /></label>
+            <label>Address<input type="text" name="address" required /></label>
+            <label>City<input type="text" name="city" required /></label>
+            <label>State<input type="text" name="state" required /></label>
+          </div>
+
+          <h2>Section 2 - Contact Person Details</h2>
+          <div class="form-grid-2">
+            <label>Contact Person Name<input type="text" name="contactPersonName" required /></label>
+            <label>Designation<input type="text" name="designation" required /></label>
+            <label>Email Address<input type="email" name="emailAddress" required /></label>
+            <label>Phone Number<input type="tel" name="phoneNumber" required /></label>
+          </div>
+
+          <h2>Section 3 - Student Information</h2>
+          <div class="form-grid-2">
+            <label>Courses Offered<input type="text" name="coursesOffered" required /></label>
+            <label>Number of Students<input type="number" min="1" name="studentsCount" required /></label>
+            <label>Final Year Students Count<input type="number" min="0" name="finalYearStudentsCount" required /></label>
+            <label>Placement Support Needed
+              <select name="placementSupportNeeded" required>
+                <option value="" selected disabled>Select</option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </label>
+          </div>
+
+          <h2>Section 4 - Partnership Type</h2>
+          <p>Select all collaboration areas you are interested in:</p>
+          <div class="check-grid">
+            <label><input type="checkbox" name="partnershipTypes" value="Campus Recruitment" /> Campus Recruitment</label>
+            <label><input type="checkbox" name="partnershipTypes" value="Training Programs" /> Training Programs</label>
+            <label><input type="checkbox" name="partnershipTypes" value="Mock Interviews" /> Mock Interviews</label>
+            <label><input type="checkbox" name="partnershipTypes" value="Career Guidance Sessions" /> Career Guidance Sessions</label>
+            <label><input type="checkbox" name="partnershipTypes" value="Industry Workshops" /> Industry Workshops</label>
+          </div>
+
+          <h2>Section 5 - Additional Information</h2>
+          <label>Any specific requirements or expectations?<textarea rows="5" name="specificRequirements"></textarea></label>
+
+          <button class="btn btn-primary" type="submit" data-default-text="Submit">Submit</button>
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="data-protection-policy.html">Data Protection Policy</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

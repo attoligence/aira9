@@ -1,0 +1,17 @@
+﻿User-agent: *
+Allow: /
+
+# Utility forms
+Disallow: /academy-partnership-form.html
+Disallow: /attoligence-application.html
+Disallow: /business-client-form.html
+Disallow: /business-enquiry.html
+Disallow: /candidate-interest-form.html
+Disallow: /career-application.html
+Disallow: /contact-enquiry.html
+Disallow: /hr-expert-registration.html
+Disallow: /mock-interview-booking.html
+Disallow: /training-enrollment.html
+
+Sitemap: https://www.attoligence.com/sitemap.xml
+

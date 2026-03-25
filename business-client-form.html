@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Hiring Support | Attoligence</title>
+  <meta name="description" content="Business client form for companies requesting hiring support from Attoligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- SEO:CORE START -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <link rel="canonical" href="https://www.attoligence.com/business-client-form.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Attoligence" />
+  <meta property="og:title" content="Request Hiring Support | Attoligence" />
+  <meta property="og:description" content="Business client form for companies requesting hiring support from Attoligence." />
+  <meta property="og:url" content="https://www.attoligence.com/business-client-form.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Request Hiring Support | Attoligence" />
+  <meta name="twitter:description" content="Business client form for companies requesting hiring support from Attoligence." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" />
+  <!-- SEO:CORE END -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Attoligence</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">Menu</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="attoligence-business.html" class="active">Business</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-page">
+      <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=2000&q=80');"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Request Hiring Support</h1>
+        <p>Companies can submit hiring requirements here for a faster review by the Attoligence team.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-wrap panel reveal">
+        <form data-google-sheet="true" data-form-name="Business Client Hiring Request" data-endpoint="https://script.google.com/macros/s/AKfycbwyx8gxPYXf3_78k9r1MV27PeAFUALZ9VD3AAo0wpm6dH6XyhANvrQfYr4UMYTukZ9Kjg/exec">
+          <h2>Section 1 - Company Information</h2>
+          <div class="form-grid-2">
+            <label>Company Name<input type="text" name="companyName" required /></label>
+            <label>Industry Type
+              <select name="industryType" required>
+                <option value="" selected disabled>Select industry</option>
+                <option>Pharma</option>
+                <option>Manufacturing</option>
+                <option>IT</option>
+                <option>Logistics</option>
+                <option>Retail</option>
+                <option>BPO</option>
+                <option>Startup</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Company Website<input type="url" name="companyWebsite" placeholder="https://example.com" /></label>
+            <label>Company Address<input type="text" name="companyAddress" required /></label>
+            <label>City<input type="text" name="city" required /></label>
+            <label>State<input type="text" name="state" required /></label>
+          </div>
+
+          <h2>Section 2 - Contact Person Details</h2>
+          <div class="form-grid-2">
+            <label>Contact Person Name<input type="text" name="contactPersonName" required /></label>
+            <label>Designation<input type="text" name="designation" required /></label>
+            <label>Official Email Address<input type="email" name="officialEmail" required /></label>
+            <label>Phone Number<input type="tel" name="phoneNumber" required /></label>
+          </div>
+
+          <h2>Section 3 - Hiring Requirement</h2>
+          <div class="form-grid-2">
+            <label>Job Title / Position<input type="text" name="jobTitle" required /></label>
+            <label>Number of Positions<input type="number" min="1" name="positionsCount" required /></label>
+            <label>Employment Type
+              <select name="employmentType" required>
+                <option value="" selected disabled>Select type</option>
+                <option>Full-time</option>
+                <option>Part-time</option>
+                <option>Contract</option>
+                <option>Internship</option>
+              </select>
+            </label>
+            <label>Experience Level Required
+              <select name="experienceLevelRequired" required>
+                <option value="" selected disabled>Select experience</option>
+                <option>Fresher</option>
+                <option>1-3 Years</option>
+                <option>3-5 Years</option>
+                <option>5+ Years</option>
+              </select>
+            </label>
+            <label>Salary Range<input type="text" name="salaryRange" placeholder="Example: 3.5 LPA - 5 LPA" required /></label>
+            <label>Job Location<input type="text" name="jobLocation" required /></label>
+          </div>
+
+          <h2>Section 4 - Job Details</h2>
+          <div class="form-grid-2">
+            <label>Required Skills<input type="text" name="requiredSkills" placeholder="Comma separated skills" required /></label>
+            <label>Educational Qualification<input type="text" name="educationalQualification" required /></label>
+          </div>
+          <label>Job Description<textarea rows="5" name="jobDescription" required></textarea></label>
+
+          <h2>Section 5 - Additional Services</h2>
+          <p>Select all services you are interested in:</p>
+          <div class="check-grid">
+            <label><input type="checkbox" name="additionalServices" value="Recruitment Support" /> Recruitment Support</label>
+            <label><input type="checkbox" name="additionalServices" value="Campus Hiring" /> Campus Hiring</label>
+            <label><input type="checkbox" name="additionalServices" value="Payroll and Compliance" /> Payroll and Compliance</label>
+            <label><input type="checkbox" name="additionalServices" value="Training Programs" /> Training Programs</label>
+            <label><input type="checkbox" name="additionalServices" value="HR Consulting" /> HR Consulting</label>
+            <label><input type="checkbox" name="additionalServices" value="BPO Services" /> BPO Services</label>
+          </div>
+
+          <h2>Section 6 - Additional Information</h2>
+          <label>Any additional requirements?<textarea rows="4" name="additionalRequirements"></textarea></label>
+
+          <button class="btn btn-primary" type="submit" data-default-text="Submit">Submit</button>
+          <div class="form-status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><h4>Legal</h4><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="data-protection-policy.html">Data Protection Policy</a></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

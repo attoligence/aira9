@@ -1,0 +1,321 @@
+:root {
+  --guide-bg: #f4f7fb;
+  --guide-surface: #ffffff;
+  --guide-ink: #163047;
+  --guide-muted: #5d7284;
+  --guide-line: #d7e2ee;
+  --guide-accent: #0d5ea6;
+  --guide-accent-2: #1f9be2;
+  --guide-soft: #eaf5ff;
+  --guide-warm: #fff6e8;
+  --guide-shadow: 0 22px 55px rgba(11, 40, 72, 0.12);
+  --guide-radius: 28px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--guide-ink);
+  background:
+    radial-gradient(circle at top left, rgba(31, 155, 226, 0.14), transparent 24rem),
+    linear-gradient(180deg, #eef6fc 0%, var(--guide-bg) 100%);
+}
+
+a { color: inherit; }
+
+.guide-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.guide-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba(13, 94, 166, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  position: sticky;
+  top: 1rem;
+  z-index: 10;
+}
+
+.guide-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--guide-accent);
+}
+
+.guide-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.guide-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.guide-btn:hover { transform: translateY(-2px); }
+
+.guide-btn.primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--guide-accent) 0%, var(--guide-accent-2) 100%);
+  box-shadow: 0 12px 28px rgba(13, 94, 166, 0.28);
+}
+
+.guide-btn.secondary {
+  color: var(--guide-accent);
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(13, 94, 166, 0.18);
+}
+
+.guide-page {
+  position: relative;
+  overflow: hidden;
+  background: var(--guide-surface);
+  border: 1px solid rgba(13, 94, 166, 0.08);
+  border-radius: var(--guide-radius);
+  box-shadow: var(--guide-shadow);
+  padding: 2.25rem;
+  margin-bottom: 1.5rem;
+  animation: pageRise 520ms ease both;
+}
+
+.guide-page::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 7px;
+  background: linear-gradient(90deg, var(--guide-accent) 0%, var(--guide-accent-2) 100%);
+}
+
+.guide-cover {
+  min-height: 85svh;
+  display: grid;
+  align-items: end;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.guide-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 24, 42, 0.2) 0%, rgba(6, 24, 42, 0.84) 100%);
+}
+
+.guide-cover .cover-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.guide-cover h1,
+.guide-page h2,
+.guide-page h3 {
+  margin: 0 0 0.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.15;
+}
+
+.guide-cover h1 { font-size: clamp(2.4rem, 6vw, 4.4rem); }
+
+.guide-cover p {
+  font-size: 1.06rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.meta-line {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+  font-weight: 600;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.lead {
+  color: var(--guide-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.info-stack,
+.card-stack,
+.bullet-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.guide-card {
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  border: 1px solid var(--guide-line);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfe 100%);
+}
+
+.guide-card.soft { background: var(--guide-soft); }
+.guide-card.warm { background: var(--guide-warm); }
+.guide-card h3 { font-size: 1.02rem; }
+
+.guide-card p,
+.guide-card li,
+.guide-page li,
+.guide-page p { line-height: 1.72; }
+
+.guide-page ul,
+.guide-page ol {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.split-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.4rem;
+}
+
+.image-frame {
+  min-height: 260px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 18px 40px rgba(11, 40, 72, 0.16);
+  background-size: cover;
+  background-position: center;
+}
+
+.formula {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.formula span {
+  padding: 0.55rem 0.8rem;
+  border-radius: 999px;
+  background: #f1f7fc;
+  border: 1px solid var(--guide-line);
+  font-weight: 700;
+  color: var(--guide-accent);
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--guide-accent);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+}
+
+.cta-block {
+  text-align: center;
+  padding: 1.3rem;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0d5ea6 0%, #1f9be2 100%);
+  color: #fff;
+}
+
+.cta-block p { color: rgba(255, 255, 255, 0.92); }
+
+.footer-note {
+  text-align: center;
+  color: var(--guide-muted);
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+}
+
+@keyframes pageRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .guide-shell {
+    width: min(100% - 1rem, 1120px);
+    padding-top: 1rem;
+  }
+
+  .guide-topbar,
+  .page-grid,
+  .split-list {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-page {
+    padding: 1.35rem;
+    border-radius: 22px;
+  }
+
+  .guide-cover { min-height: 70svh; }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  body { background: #fff; }
+
+  .guide-shell {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .guide-topbar { display: none; }
+
+  .guide-page {
+    box-shadow: none;
+    border: 1px solid #d7e2ee;
+    break-after: page;
+    margin-bottom: 0.8rem;
+  }
+
+  .guide-page:last-child { break-after: auto; }
+  .guide-btn { display: none; }
+}
